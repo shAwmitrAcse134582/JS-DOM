@@ -14,12 +14,30 @@
         <h1>Explore with Javascript dom</h1>
     </header>
     <main>
-        <h2>welcome to Document Object Model </h2>
-        <ul>
-            <li>Bangladesh</li>
-            <li>Brazil</li>
-            <li>India</li>
-        </ul>
+        <section>
+            <h2 id="country-title">welcome to Document Object Model </h2>
+            <ul>
+                <li>Bangladesh</li>
+                <li>Brazil</li>
+                <li>India</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="fruits-title">fruits List</h2>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="place-title">favourite places</h2>
+            <ul>
+                <li class="places">kuakata</li>
+                <li class="places">sundorBan</li>
+                <li class="places">sajek</li>
+            </ul>
+        </section>
     </main>
     <script src="js/Dom.js">
 //here we also write js code
@@ -34,6 +52,11 @@
         for (h1 of headingName) {
             console.log(h1.innerText);
         }
+        const placesName = document.getElementsByClassName('places');
+        for (place of placeName) {
+            console.log(place.innerText);
+        }
+
     </script>
 </body>
 
