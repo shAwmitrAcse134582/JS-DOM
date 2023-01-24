@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore javascript Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Explore with Javascript dom</h1>
+    </header>
+    <main>
+        <h2>welcome to Document Object Model </h2>
+        <ul>
+            <li>Bangladesh</li>
+            <li>Brazil</li>
+            <li>India</li>
+        </ul>
+    </main>
+    <script src="js/Dom.js">
+//here we also write js code
+    </script>
+    <script>
+        const lilist = document.getElementsByTagName('li');
+        // console.log(lilist);
+        for (li of lilist) {
+            console.log(li.innerText);
+        }
+        const headingName = document.getElementsByTagName('h1');
+        for (h1 of headingName) {
+            console.log(h1.innerText);
+        }
+    </script>
+</body>
+
+</html>
