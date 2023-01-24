@@ -17,3 +17,11 @@ h1 {
 .places {
     color: gold
 }
+
+.yellow-bg {
+    background-color: yellowgreen ! important;
+}
+
+.large-text {
+    font-size: 2em;
+}

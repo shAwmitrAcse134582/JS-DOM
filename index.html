@@ -22,7 +22,7 @@
                 <li>India</li>
             </ul>
         </section>
-        <section>
+        <section id="fruits-container" class="large-text">
             <h2 id="fruits-title">fruits List</h2>
             <ul>
                 <li>Apple</li>
@@ -40,22 +40,33 @@
         </section>
     </main>
     <script src="js/Dom.js">
+
 //here we also write js code
     </script>
+    <script src="js/styleinjs.js"></script>
     <script>
         const lilist = document.getElementsByTagName('li');
         // console.log(lilist);
         for (li of lilist) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
         const headingName = document.getElementsByTagName('h1');
         for (h1 of headingName) {
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
         }
-        const placesName = document.getElementsByClassName('places');
-        for (place of placeName) {
-            console.log(place.innerText);
+        // const placesName = document.getElementsByClassName('places');
+        // for (place of placeName) {
+        //     // console.log(place.innerText);
+        // }
+        //query Selector all
+        const someLi = document.querySelectorAll('.fruits-container li');
+        // 
+        for (li of someLi) {
+            // console.log(li.innerText);
         }
+
+
+
 
     </script>
 </body>
